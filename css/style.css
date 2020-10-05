@@ -1,0 +1,94 @@
+/*I decided not to put global properties in the body element.
+body {
+    
+}*/
+
+/*made the entire page a container to set global properties.*/
+.entire-container {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    background-color: #efeee7;
+    color: #333333;
+    width: 1024px;
+    margin: 0;
+}
+
+/*this banner sits above h1 in the header. I set the banner display to block so I could center the image using margin right and left auto.*/
+#banner {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    background-repeat: no-repeat;
+}
+
+/*block element header 1 will have these properties and values.*/
+h1 {
+    width: auto;
+    padding: 15px;
+    background-color: #333333;
+    text-align: center;
+    color: #eee;
+    font-size: 36px; 
+    margin: 0; 
+}
+
+/*setting the width of the container that holds the two sections of infromation.*/
+.bio-container {
+    width: 100%;
+}
+
+/*making a section with id selector main-bio with these specific properties and values. This section floats left.*/
+#main-bio {
+    width: 70%;
+    float: left;
+    margin: 0;
+}
+
+/*block element header 2 in the main-bio section will have these properties and values.*/
+#name {
+    text-indent: 50px;
+    padding: 20px;
+    font-size: 24px;
+    margin: 0;
+}
+
+/*p tag properties in the main-bio*/
+p {
+    text-indent: 50px;
+    padding: 0px 10px 15px 30px;
+    line-height: 1.8em;
+    margin: 0;
+}
+
+/*making a section id selector contact-info with these specific properties and values. This section floats left*/
+#contact-info {
+    width: 30%;
+    float: left;
+    margin: 0;
+    text-align: center;
+}
+
+/*making id selector bio-image with these specific properties and values*/
+#bio-image {
+    clear: both;
+    display: block;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    width: 60%;
+    border-radius: 50px;
+}
+
+/*an id for the unordered list of contact info*/
+#list {
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+}
+
+/*targeting the a tag for styling the links in the contact info.*/
+a {
+    color: #d21034;
+    line-height: 1.5em;
+    margin: 0px 20px 0px 0px;
+}
