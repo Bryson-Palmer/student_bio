@@ -46,6 +46,7 @@ h1 {
 
 /*block element header 2 in the main-bio section will have these properties and values.*/
 #name {
+    text-shadow: 2px 3px 5px #aaaaaa;
     text-indent: 50px;
     padding: 20px;
     font-size: 24px;
@@ -76,6 +77,7 @@ p {
     margin-bottom: 20px;
     margin-left: auto;
     width: 60%;
+    box-shadow: 6px 8px 5px #aaaaaa;
     border-radius: 50px;
 }
 
