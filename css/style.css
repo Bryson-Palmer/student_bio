@@ -1,14 +1,15 @@
-/*I decided not to put global properties in the body element.
-body {
-    
-}*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
 /*made the entire page a container to set global properties.*/
 .entire-container {
+    width: 100vw;
+    /* height: 100vh; */
     font-family: Georgia,"Times New Roman",Times,serif;
     background-color: #efeee7;
     color: #333333;
-    width: 1024px;
     margin: 0;
 }
 
@@ -23,7 +24,7 @@ body {
 
 /*block element header 1 will have these properties and values.*/
 h1 {
-    width: auto;
+    width: 100vw;
     padding: 15px;
     background-color: #333333;
     text-align: center;
@@ -34,14 +35,14 @@ h1 {
 
 /*setting the width of the container that holds the two sections of infromation.*/
 .bio-container {
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    margin: 0;
 }
 
 /*making a section with id selector main-bio with these specific properties and values. This section floats left.*/
 #main-bio {
-    width: 70%;
-    float: left;
-    margin: 0;
+    width: 70vw;
 }
 
 /*block element header 2 in the main-bio section will have these properties and values.*/
@@ -55,7 +56,7 @@ h1 {
 
 /*p tag properties in the main-bio*/
 p {
-    text-indent: 50px;
+    text-indent: 30px;
     padding: 0px 10px 15px 30px;
     line-height: 1.8em;
     margin: 0;
@@ -63,19 +64,21 @@ p {
 
 /*making a section id selector contact-info with these specific properties and values. This section floats left*/
 #contact-info {
-    width: 30%;
-    float: left;
+    width: 30vw;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+}
+ 
+#contactTitle {
+    padding: 20px;
 }
 
 /*making id selector bio-image with these specific properties and values*/
 #bio-image {
-    clear: both;
-    display: block;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
+    margin: 1rem auto;
     width: 60%;
     box-shadow: 6px 8px 5px #aaaaaa;
     border-radius: 50px;
@@ -83,14 +86,22 @@ p {
 
 /*an id for the unordered list of contact info*/
 #list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     line-height: 1.5em;
-    text-align: left;
-    margin: 0;
+    margin-bottom: 1rem;
+    padding-left: 0rem;
+    list-style-type: none;
+}
+
+li {
+    padding: 0 1rem;
 }
 
 /*targeting the a tag for styling the links in the contact info.*/
 a {
     color: #d21034;
     line-height: 1.5em;
-    margin: 0px 20px 0px 0px;
 }
